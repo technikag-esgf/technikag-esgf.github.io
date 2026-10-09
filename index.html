@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080a10">
+    <meta
+      name="description"
+      content="Willkommen auf der Startseite der Technik-AG am ESG."
+    >
+    <title>Technik-AG | ESG</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #080a10;
+        color: #f4f6fb;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(ellipse at 50% 45%, rgb(28 37 68 / 55%), transparent 58%),
+          #080a10;
+      }
+
+      main {
+        width: min(100% - 3rem, 1080px);
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 1.5rem;
+        color: #aeb8ce;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+
+      .logo {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 0.25rem;
+        box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 40%);
+      }
+
+      h1 {
+        margin: 2.5rem 0 0.75rem;
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 600;
+        letter-spacing: -0.04em;
+      }
+
+      .welcome {
+        margin: 0;
+        color: #aeb8ce;
+        font-size: clamp(1rem, 2vw, 1.125rem);
+        line-height: 1.6;
+      }
+
+      .accent {
+        width: 3rem;
+        height: 3px;
+        margin: 2rem auto 0;
+        border-radius: 2px;
+        background: linear-gradient(90deg, #7555ff, #19c9e8, #ffe600);
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: min(100% - 2rem, 1080px);
+        }
+
+        .eyebrow {
+          margin-bottom: 1rem;
+        }
+
+        h1 {
+          margin-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Elisabeth-Selbert-Gymnasium</p>
+      <img
+        class="logo"
+        src="Logo_Technik_AG.png"
+        alt="ESG Technik AG"
+      >
+      <h1>Technik-AG</h1>
+      <p class="welcome"></p>
+      <div class="accent" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>
